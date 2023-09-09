@@ -1,0 +1,125 @@
+.main {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    z-index: 0;
+    position: fixed;  
+    left: 0; 
+    top: 0; 
+    position: relative; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 3%;
+    color: #ffffff;
+
+}
+
+.left-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 中央に配置するトランスフォーム */
+    width: 80%;
+    height: 80%;
+}
+
+.left-icon img,
+.center-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.header-label{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #ffffff;
+
+}
+
+.post {
+    border: 1px solid #8f8c8c;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 20%;
+    max-width: 60%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.UserIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nickname {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.username {
+    color: #888;
+    margin-left: 5px;
+}
+
+.post-body {
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+
+.post-imgs {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.post-img{
+    margin-right: 10%;
+    width: 40%;
+    height: auto;
+}
+
+footer{
+    position: relative;
+    background-color: black;
+}
+
+.footer-items{
+    background-color: black;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    z-index: 100;
+    position: fixed;  
+    left: 0; 
+    bottom: 0; 
+}
+
+.footer-item{
+    margin-left: 20%;
+    width: 35%;
+    height: auto;
+    
+}
