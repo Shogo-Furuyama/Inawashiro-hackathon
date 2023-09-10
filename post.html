@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+ 
+<html lang="ja">
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+ 
+/* ヘッダー */
+header {
+    display: flex;
+  
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+}
+ 
+/* ユーザーコンテナー */
+.user-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column; /* アイコンを下に配置するための方向指定 */
+}
+ 
+/* ユーザーアイコン */
+.user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+/* バツボタン */
+.close-button {
+    padding: 20%;
+    cursor: pointer;
+    font-size: 128px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+ 
+/* 緊急度ドロップダウン */
+.emergency-dropdown {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+#emergency-level{
+    margin-right: 5px;
+    font-size: 32px;
+}
+ 
+.emergency-dropdown label {
+    margin-right: 5px;
+}
+ 
+.emergency-dropdown select {
+    background-color: #fff;
+    color: #1DA1F2;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+ 
+/* 投稿ボタン */
+.post-button button {
+    background-color: #1DA1F2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-left: auto;
+    margin: 20px;
+    font-size: 48px;
+}
+
+.post-label {
+    color:#1DA1F2;
+    margin-left: auto;
+    padding: 20px;
+    font-size: 48px;
+}
+ 
+/* ツイートボックス */
+.tweet-box {
+    padding: 20px;
+}
+ 
+/* テキストエリア */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 48px;
+}
+
+a{
+    color: #000000;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="user-container">
+            <a href ="timeline.html" ><div class="close-button">×</div></a>
+            <div class="user-icon">
+                <!-- ここに自分のアイコン画像を設定 -->
+                <img src="your-icon.png" alt="Your Icon">
+            </div>
+        </div>
+        <div class="emergency-dropdown">
+            <select id="emergency-level">
+                <option value="low">匿名</option>
+                <option value="medium">大人のみに公開</option>
+                <option value="high">全員に公開</option>
+            </select>
+        </div>
+
+        <div class="post-label">
+            <label>下書き</label>
+        </div>
+
+        <div class="post-button">
+            <button onclick="location.href='./timeline2.html'">投稿</button>
+        </div>
+    </header>
+    <main>
+        <div class="tweet-box">
+            <textarea placeholder="いまどんなじょうきょう？"></textarea>
+        </div>
+    </main>
+</body>
+</html>
